@@ -1,0 +1,675 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------- Navbar Section ------------------ */
+
+
+.Navbar-Container{
+    background-color: #206CA0;
+    width: 100%;
+    display: flex;
+    padding : 20px 150px 20px 110px;
+    align-items: center;
+}
+.Navbar-Logo{
+    height:80px;
+    cursor: pointer;
+    user-select: none;
+}
+.Navbar-Links{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.Navbar-Link{
+    color:white;
+    margin-right: 45px;
+    cursor: pointer;
+    user-select: none;
+}
+.Navbar-Button{
+    cursor: pointer;
+    user-select: none;
+    border : 2px solid white;
+    padding : 10px 20px;
+    border-radius: 5px;
+}
+
+.Navbar-Hamburger{
+    display: none;
+}
+
+/* ------------------- Hero Section ------------------ */
+
+.Hero-Container{
+    width: 100%;
+    padding : 150px 110px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.Hero-Box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Hero-Title{
+    font-size : 62px;
+    max-width: 800px;
+    line-height:1;   
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+.Hero-Desc{
+    font-size:18px;
+    max-width: 600px;
+    line-height: 180%;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+.Hero-Trusted-Text{
+    font-size:18px;
+    max-width: 250px;
+    margin-bottom: 40px;
+}
+.Hero-Button{
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 15px 30px;
+    font-size: 15px;
+    color: #206CA0;
+    background-color: white;
+    max-width: 200px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* ------------------- About Section ------------------ */
+
+.About-Container{
+    padding: 150px;
+    padding-bottom: 130px;
+    display: flex;
+}
+.About-Box{
+    display: flex;
+    align-items: center;
+}
+.About-Image{
+    display: flex;
+    flex : 1;
+    width: 500px;
+    height : 400px;
+    padding-right : 80px;
+}
+.About-TextContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color:black;
+}
+.About-Title{
+    color: #206CA0;
+    font-size : 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.About-Desc{
+    color:#393939;
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 20px;
+}
+.About-Button{
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 15px 30px;
+    font-size: 15px;
+    color: white;
+    background-color: #206CA0;
+    max-width: 200px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+/* ------------------- Services Section ------------------ */
+.Services-Container{
+    padding: 50px;
+}
+.Services-Box{
+ background-color: #206CA0;
+ border-radius: 20px;
+padding : 50px 50px 110px 50px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+}
+.Services-Title{
+    color: white;
+    font-size : 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.Services-Cards{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+
+}
+.Services-Card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color : #206CA0;
+    height : 500px;
+    width : 300px;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 30px;
+
+    padding : 30px;
+}
+.Services-Card:last-child{
+    margin-right: 0;
+}
+.Services-Card-Image{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.Services-Card-Title{
+    font-size : 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.Services-Card-Desc{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 180%;
+}
+.Services-Card-Button{
+    margin-top: auto;
+
+    width: 180px;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #206CA0;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+/* ------------------- Why Us Section ------------------ */
+
+.Why-Container{
+    padding: 150px;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    display: flex;
+}
+.Why-Box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.Why-Image{
+    flex : 1;
+    padding-right: 50px;
+    height : 400px;
+    width : 300px;
+}
+.Why-Text-Container{
+    display : flex;
+    flex: 1;
+    flex-direction: column;
+    color: #206CA0;
+    align-items: center;
+}
+.Why-Text-Title{
+    color: #206CA0;
+    font-size : 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Why-Text-Cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.Why-Text-Card{
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    width: 48%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size:18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Why-Text-Button{
+    margin-top: auto;
+
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 15px 30px;
+    font-size: 15px;
+    color: white;
+    background-color: #206CA0;
+    max-width: 300px;
+    font-weight: 600;
+    border-radius: 5px;
+    
+}
+
+
+
+
+
+
+
+
+
+/* ------------------- FAQ Section ------------------ */
+.FAQ-Container{
+    padding : 120px;
+    color : #206CA0;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+.FAQ-Title{
+    color: #206CA0;
+    font-size : 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.FAQ-Box{
+    display:  flex;
+}
+.FAQ-Left, .FAQ-Right{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+
+    
+    margin: 20px;
+}
+.FAQ-FAQContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 123px -36px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 123px -36px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 123px -36px rgba(0,0,0,0.35);
+
+    margin-bottom: 20px;
+    border-radius : 20px;
+    
+}
+.FAQ-FAQQuestion{
+    display: flex;
+    width: 100%;
+    min-width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.FAQ-FAQQuestionText{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+.FAQ-FAQQuestionClick{
+    background-color: #ccc;
+    height : 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 10px 12px;
+    border-radius: 10px;
+    font-size: 28px;
+    user-select: none;
+    cursor: pointer;
+}
+.FAQ-FAQAnswer{
+    color : #333;
+}
+
+
+
+
+
+/* ------------------- Contact Section ------------------ */
+
+.Contact-Container{
+    display: flex;
+    padding: 50px 150px;
+    padding-top : 100px;
+    background-color: #206CA0;
+    position: relative;
+    top:-30px;
+    z-index: 1;
+    margin-bottom : -30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.Contact-Box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Contact-Secondary{
+    display: flex;
+    margin-bottom: 150px;
+}
+.Contact-Left{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+} 
+
+.Contact-Left-Title{
+    color: white;
+    font-size : 42px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.Contact-Left-Desc{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 180%;
+    margin-bottom: 50px;
+}
+.Contact-Left-Image{
+    height : 70px;
+    width: 300px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.Contact-Left-Links{
+    padding : 10px;
+    background-color: #1B6597;
+    display: flex;
+    border-radius: 20px;
+    width: fit-content;
+    align-items: center;
+
+}
+.Contact-Left-Link{
+    margin: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Contact-Right{
+    display: flex;
+    flex-direction: column;
+    flex:3;
+    padding-left :150px;
+}   
+.Contact-Right-Top{
+    display: flex;
+}
+
+.Contact-Input-Container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 100px;
+    margin-bottom: 30px;
+}
+.Contact-Input-Label{
+    color :white;
+    font-size : 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+@media (max-width: 1300px){
+    .Navbar-Logo{
+        height:50px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .Navbar-Link{
+        font-size: 12px;
+    }
+    .Services-Box{
+        padding: 50px  50px 100px 50px;
+    }
+    .Why-Container{
+        padding: 50px;
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+    .Contact-Container{
+        padding: 50px 100px;
+        padding-top : 100px;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .About-Container{
+        padding-right : 100px;
+        padding-left : 100px;
+    }
+    .Contact-Container{
+        padding: 50px 50px;
+        padding-top : 100px;
+    }
+    .Navbar-Container{
+        padding : 20px 100px 20px 100px;
+    }
+}
+
+@media (max-width: 1100px){
+    
+    .Navbar-Container{
+        padding : 20px 50px 20px 50px;
+    }
+    .Why-Container{
+        padding: 50px;
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+    .Why-Text-Card{
+        font-size:16px;
+    }
+    .Contact-Input-Label{
+        font-size : 14px;
+    }
+    .Contact-Container{
+        padding: 50px 30px;
+        padding-top : 100px;
+    }
+
+}
+
+
+@media (max-width: 1000px){
+    .FAQ-Box{
+       flex-direction: column;
+    }
+    .Navbar-Button{
+     font-size:14px;
+    }
+}
+
+
+
+@media (max-width: 900px){
+    .Services-Cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Services-Card{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .Why-Text-Cards{
+        flex-direction: column;
+    }
+    .Why-Text-Card{
+        font-size:14px;
+    }
+    .Navbar-Links{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .About-Container{
+        padding-right : 50px;
+        padding-left : 50px;
+    }
+    .Why-Image{
+        display: none;
+
+        flex:0;
+    }
+    .Hero-Title{
+        font-size : 52px;
+    }
+    .About-Box{
+        flex-direction: column;
+    }
+    .About-Image{
+        padding-right : 0;
+        margin-bottom: 50px;
+    }
+    .Contact-Secondary{
+        flex-direction: column-reverse;
+    }
+    .Contact-Right{
+        padding-left : 0;
+        margin-bottom: 50px;
+    }   
+    .Contact-Left-Title{
+        text-align: center;
+        width: 100%;
+    }
+    .Hero-Container{
+        padding : 150px 50px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .About-Container{
+        padding-right : 10px;
+        padding-left : 10px;
+    }
+    .Hero-Container{
+        padding : 50px 10px;
+        padding-top : 200px;
+    }
+    .FAQ-Container{
+        padding : 50px;
+    }
+    .Hero-Box{
+        position: relative;
+        top:50px;
+        align-items: center;
+    }
+    .Hero-Title{
+        font-size : 40px;
+        text-align: center;
+    }
+    .Hero-Desc{
+        max-width: 400px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .Hero-Trusted{
+        display: none;
+    }
+    .Hero-Button{
+        position: absolute;
+        bottom:-40px;
+
+        padding : 30px 30px;
+        font-size: 15px;
+        color:  white;
+        background-color: #206CA0;
+        max-width: 300px;
+        width: 100%;
+        font-weight: 600;
+        border-radius: 5px;
+        border : 1px solid white;
+    }
+}
+
+@media (max-width: 550px){
+    .About-Container{
+        padding-right : 10px;
+        padding-left : 10px;
+    }
+    .About-Image{
+        display: flex;
+        width: 100%;
+        padding-right : 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .FAQ-Container{
+        padding : 10px;
+    }
+    .FAQ-Box{
+        padding:0;
+    }
+    .FAQ-Left, .FAQ-Right{
+        width: 100%;
+        margin: 20px 0; 
+
+    }
+    .FAQ-FAQContainer{
+        width: 100%;
+    }
+    .Services-Container{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .FAQ-FAQQuestion{
+        min-width:300px;
+    }
+}
