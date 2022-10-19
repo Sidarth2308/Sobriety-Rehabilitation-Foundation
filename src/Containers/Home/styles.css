@@ -32,6 +32,7 @@
     border : 2px solid white;
     padding : 10px 20px;
     border-radius: 5px;
+    color:white;
 }
 
 .Navbar-Hamburger{
@@ -47,6 +48,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    color:white;
 }
 .Hero-Box{
     display: flex;
@@ -59,6 +61,7 @@
     line-height:1;   
     font-weight: 600;
     margin-bottom: 28px;
+    color:white;
 }
 .Hero-Desc{
     font-size:18px;
@@ -66,11 +69,13 @@
     line-height: 180%;
     margin-bottom: 40px;
     font-weight: 500;
+    color:white;
 }
 .Hero-Trusted-Text{
     font-size:18px;
     max-width: 250px;
     margin-bottom: 40px;
+    color:white;
 }
 .Hero-Button{
     user-select: none;
@@ -213,7 +218,40 @@ padding : 50px 50px 110px 50px;
     font-weight: 600;
     border-radius: 5px;
 }
+.Doctor-Card{
+    display: flex;
+    flex-direction: column;
+    color : #206CA0;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 30px;
 
+    padding : 30px;
+}
+.Doctor-Card-Title{
+    font-size : 22px;
+    font-weight: 600;
+    color:white;
+    margin-top: 30px;
+}
+.Doctor-Card-Image{
+    width: 300px;
+    height: 450px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+.Doctor-Card-Desc{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+    color:white;    
+}
 
 /* ------------------- Why Us Section ------------------ */
 
@@ -486,6 +524,11 @@ padding : 50px 50px 110px 50px;
         padding: 50px 100px;
         padding-top : 100px;
     }
+    .Doctor-Card-Image{
+        width: 100%;
+        height: 350px;
+    
+    }
 }
 
 
@@ -591,6 +634,11 @@ padding : 50px 50px 110px 50px;
     }
     .Hero-Container{
         padding : 150px 50px;
+    }
+    .Doctor-Card-Image{
+        width: 300px;
+        height: 450px;
+    
     }
 }
 
