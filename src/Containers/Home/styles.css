@@ -145,6 +145,7 @@
 /* ------------------- Services Section ------------------ */
 .Services-Container{
     padding: 50px;
+    color:#206CA0;
 }
 .Services-Box{
  background-color: #206CA0;
@@ -224,6 +225,8 @@ padding : 50px 50px 110px 50px;
     padding-top: 100px;
     padding-bottom: 130px;
     display: flex;
+
+    color:#206CA0;
 }
 .Why-Box{
     display: flex;
@@ -344,6 +347,7 @@ padding : 50px 50px 110px 50px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    color:#206CA0;
 }
 .FAQ-FAQQuestionText{
     font-size: 20px;
