@@ -498,7 +498,9 @@ padding : 50px 50px 110px 50px;
     margin-bottom: 5px;
 }
 
-
+.Contact-Footer{
+    color:white;
+}
 
 
 
@@ -595,6 +597,7 @@ padding : 50px 50px 110px 50px;
     }
     .Why-Text-Card{
         font-size:14px;
+
     }
     .Navbar-Links{
         display: none;
@@ -693,6 +696,9 @@ padding : 50px 50px 110px 50px;
     .About-Container{
         padding-right : 10px;
         padding-left : 10px;
+    }
+    .Why-Text-Card{
+        width: 300px;
     }
     .About-Image{
         display: flex;
