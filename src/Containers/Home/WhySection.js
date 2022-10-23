@@ -4,10 +4,10 @@ import WhyImage from "../../Assets/whychoose.png";
 import "./styles.css";
 import { useMediaQuery } from "react-responsive";
 
-export default function WhySection() {
+export default function WhySection({ innerRef }) {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
   return (
-    <Flex className="Why-Container">
+    <Flex className="Why-Container" ref={innerRef}>
       <Flex className="Why-Box">
         {!isTabletOrMobile && (
           <Flex className="Why-Image">

@@ -8,10 +8,10 @@ import linkedIn from "../../Assets/linkedin.png";
 import facebook from "../../Assets/facebook.png";
 import { useMediaQuery } from "react-responsive";
 
-export default function Contact() {
+export default function Contact({ innerRef }) {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
   return (
-    <Flex className="Contact-Container">
+    <Flex className="Contact-Container" ref={innerRef}>
       <Flex className="Contact-Box">
         <Flex className="Contact-Secondary">
           <Flex className="Contact-Left">

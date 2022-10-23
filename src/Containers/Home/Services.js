@@ -2,10 +2,8 @@ import { Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import "./styles.css";
 import CardImage from "../../Assets/Serviceimage1.png";
-import doctorImage from "../../Assets/doctor.jpg";
-
-const LoremIpsum =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit luctus lectus in facilisis.";
+import doctorImage1 from "../../Assets/DoctorImage1.jpeg";
+import doctorImage2 from "../../Assets/DoctorImage2.jpeg";
 
 const ServicesCard = ({ title, desc, button }) => {
   return (
@@ -19,7 +17,7 @@ const ServicesCard = ({ title, desc, button }) => {
     </Flex>
   );
 };
-const DoctorCard = ({ title, desc, button }) => {
+const DoctorCard = ({ title, desc, doctorImage }) => {
   return (
     <Flex className="Doctor-Card">
       <Flex className="Doctor-Card-Image" bgImage={doctorImage}>
@@ -31,9 +29,9 @@ const DoctorCard = ({ title, desc, button }) => {
   );
 };
 
-export default function Services({ type }) {
+export default function Services({ type, innerRef }) {
   return (
-    <Flex className="Services-Container">
+    <Flex className="Services-Container" ref={innerRef}>
       <Flex className="Services-Box">
         <Flex className="Services-Title">
           {type === "1" ? "Our Services" : "Meet our Psychologists"}
@@ -44,25 +42,37 @@ export default function Services({ type }) {
               {" "}
               <ServicesCard
                 title="De-addiction Therapy"
-                desc={LoremIpsum}
+                desc="Addiction treatment is not one-size-fits-all. Treatments may vary based on your needs. You can choose the treatment that works best for you based on the substance you're abusing, the level of care you need."
                 button="Get In Touch"
               />
               <ServicesCard
                 title="Mental Therapy"
-                desc={LoremIpsum}
+                desc="We have RCI licensed experienced therapists who provide comprehensive psychotherapies to clients according to their symptoms and mental health issues"
                 button="Get In Touch"
               />
               <ServicesCard
                 title="Mental Therapy"
-                desc={LoremIpsum}
+                desc="We have RCI licensed experienced therapists who provide comprehensive psychotherapies to clients according to their symptoms and mental health issues"
                 button="Get In Touch"
               />
             </>
           ) : (
             <>
-              <DoctorCard title="Dr. Ramya Thankur" desc="Therapist" />
-              <DoctorCard title="Dr. Ramya Thankur" desc="Therapist" />
-              <DoctorCard title="Dr. Ramya Thankur" desc="Therapist" />
+              <DoctorCard
+                title="Dr. Ramya Thankur"
+                desc="Therapist"
+                doctorImage={doctorImage1}
+              />
+              <DoctorCard
+                title="Dr. Ramya Thankur"
+                desc="Therapist"
+                doctorImage={doctorImage1}
+              />
+              <DoctorCard
+                title="Dr. Ramya Thankur"
+                desc="Therapist"
+                doctorImage={doctorImage2}
+              />
             </>
           )}
         </Flex>

@@ -3,9 +3,9 @@ import React from "react";
 import "./styles.css";
 import AboutImage from "../../Assets/AboutSectionimage.png";
 
-export default function AboutUs() {
+export default function AboutUs({ innerRef }) {
   return (
-    <Flex className="About-Container">
+    <Flex className="About-Container" ref={innerRef}>
       <Flex className="About-Box">
         <Flex className="About-Image">
           <Image src={AboutImage} w="100%" h="100%" alt="About Us" />
@@ -13,12 +13,11 @@ export default function AboutUs() {
         <Flex className="About-TextContainer">
           <Flex className="About-Title">About Us</Flex>
           <Flex className="About-Desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            blandit luctus lectus in facilisis. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas.
-            Morbi ornare erat a feugiat facilisis. Etiam vulputate dui ut neque
-            scelerisque, id placerat sem gravida. Duis id eros sed tortor
-            bibendum
+            Sobriety Rehabilitation Foundation is an alcohol and drug
+            deaddiction centre where residents are provided constant care and
+            support by our highly-trained staff. We offer comprehensive & Client
+            oriented programs for people suffering from substance dependence and
+            substance abuse or any other mental health conditions
           </Flex>
           <Flex className="About-Button">Get In Touch</Flex>
         </Flex>

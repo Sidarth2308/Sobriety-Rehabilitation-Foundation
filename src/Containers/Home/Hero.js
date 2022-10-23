@@ -3,9 +3,9 @@ import React from "react";
 import BgImage from "../../Assets/HeroBackground.png";
 import "./styles.css";
 
-export default function Hero() {
+export default function Hero({ innerRef }) {
   return (
-    <Flex className="Hero-Container" backgroundImage={BgImage}>
+    <Flex ref={innerRef} className="Hero-Container" backgroundImage={BgImage}>
       <Flex className="Hero-Box">
         <Flex className="Hero-Title">
           De-Addiction & Mental Therapy Services

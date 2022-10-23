@@ -40,10 +40,10 @@ const FAQS = [
   }
 ];
 
-export default function FAQs() {
+export default function FAQs({ innerRef }) {
   const [FAQOpen, setFAQOpen] = useState(0);
   return (
-    <Flex className="FAQ-Container">
+    <Flex className="FAQ-Container" ref={innerRef}>
       <Flex className="FAQ-Title">FAQs</Flex>
       <Flex className="FAQ-Box">
         <Flex className="FAQ-Left">
@@ -70,7 +70,6 @@ export default function FAQs() {
           })}
         </Flex>
         <Flex className="FAQ-Right">
-          {" "}
           {FAQS.filter((FAQ) => FAQ.id >= FAQS.length / 2).map((FAQ) => {
             return (
               <Flex className="FAQ-FAQContainer" key={FAQ.id}>

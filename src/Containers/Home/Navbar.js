@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 import "./styles.css";
 
-export default function Navbar() {
+export default function Navbar({ scrollClick, refs }) {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 900px)" });
   return (
     <Flex className="Navbar-Container">
@@ -22,12 +22,54 @@ export default function Navbar() {
         display={isTabletOrMobile ? "none" : "flex"}
         className="Navbar-Links"
       >
-        <Flex className="Navbar-Link">Home</Flex>
-        <Flex className="Navbar-Link">About Us</Flex>
-        <Flex className="Navbar-Link">Our Services</Flex>
-        <Flex className="Navbar-Link">Why Us?</Flex>
-        <Flex className="Navbar-Link">Our Team</Flex>
-        <Flex className="Navbar-Button">Contact Us</Flex>
+        <Flex
+          className="Navbar-Link"
+          onClick={() => {
+            scrollClick(refs[0]);
+          }}
+        >
+          Home
+        </Flex>
+        <Flex
+          className="Navbar-Link"
+          onClick={() => {
+            scrollClick(refs[1]);
+          }}
+        >
+          About Us
+        </Flex>
+        <Flex
+          className="Navbar-Link"
+          onClick={() => {
+            scrollClick(refs[2]);
+          }}
+        >
+          Our Services
+        </Flex>
+        <Flex
+          className="Navbar-Link"
+          onClick={() => {
+            scrollClick(refs[3]);
+          }}
+        >
+          Why Us?
+        </Flex>
+        <Flex
+          className="Navbar-Link"
+          onClick={() => {
+            scrollClick(refs[4]);
+          }}
+        >
+          Our Team
+        </Flex>
+        <Flex
+          className="Navbar-Button"
+          onClick={() => {
+            scrollClick(refs[6]);
+          }}
+        >
+          Contact Us
+        </Flex>
       </Flex>
       <Flex marginLeft="auto">
         <HamburgerIcon
